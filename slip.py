@@ -44,7 +44,7 @@ class Enlace:
         self.linha_serial = linha_serial
         self.linha_serial.registrar_recebedor(self.__raw_recv)
 	self.dados_residuais = b''
-
+	
     def registrar_recebedor(self, callback):
         self.callback = callback
 
